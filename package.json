@@ -1,14 +1,19 @@
 {
-  "name": "entrenamiento-m3s1",
+  "name": "sistema_interactivo_de_mensajes",
   "version": "1.0.0",
-  "description": "## Descripción",
-  "main": "index.js",
+  "description": "Proyecto de entrenamiento para validación de edad en JavaScript.",
+  "main": "src/result.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon src/result.js",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "javascript",
+    "edad",
+    "validación",
+    "entrenamiento"
+  ],
+  "author": "Jhosua",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^30.0.0",
