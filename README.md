@@ -1,59 +1,87 @@
-# Sistema Interactivo de Mensajes
+# Interactive Message System
 
-## Descripción
+## Description
 
-Este proyecto es una aplicación JavaScript sencilla que solicita al usuario su **nombre** y **edad** y muestra mensajes personalizados según la edad ingresada. Junto a esto tambien, un mensaje de animo.
+This project is a simple JavaScript application that asks the user for their **name** and **age** and displays personalized messages based on the entered age. It also provides an encouraging message.
 
-## Implementación
+## Implementation
 
-Como Coder, se implementó un programa en JavaScript que:
+As a Coder, a JavaScript program was implemented that:
 
-1.  **Solicita al usuario**:
-    - Nombre del usuario
-    - Edad del usuario
-    - Valida que la edad sea un número válido.
-2.  **Muestra un mensaje personalizado según la edad**:
-    - **Menor de 18**: Mensaje animando a seguir aprendiendo.
-    - **18 o mayor**: Mensaje motivando a explorar nuevas oportunidades.
-    - **No numérico**: Mensaje de error indicando que la edad debe ser un número.
-3.  **Muestra en la consola**:
-    - El nombre del usuario
-    - La edad ingresada
-    - El mensaje correspondiente según la validación
+1. **Requests from the user:**
+    - User's name
+    - User's age
+    - Validates that the age is a valid number.
+2. **Displays a personalized message based on age:**
+    - **Under 18**: Message encouraging to keep learning.
+    - **18 or older**: Message motivating to explore new opportunities.
+    - **Non-numeric**: Error message indicating that age must be a number.
+3. **Displays in the console:**
+    - The user's name
+    - The entered age
+    - The corresponding message according to the validation
 
-## Requerimientos
+## Requirements
 
-- Buenas prácticas de programación
-- Archivo README descriptivo
-- Uso de git para control de versiones
-- **Estructura clara del proyecto**:
-    - **index.html**: Interfaz de usuario (opcional para pruebas en navegador)
-    - **src/sistema_interactivo.js**: Lógica de negocio en JavaScript
-    - **README**: Documentación
-- Pruebas manuales con diferentes entradas (edad válida menor de 18, mayor o igual a 18, y no numérica)
-- Código comentado para facilitar el mantenimiento
+- Good programming practices
+- Descriptive README file
+- Use of git for version control
+- **Clear project structure:**
+  - **index.html**: User interface (optional for browser testing)
+  - **src/index.js**: Business logic in JavaScript
+  - **README**: Documentation
+- Manual tests with different inputs (valid age under 18, 18 or older, and non-numeric)
+- Commented code to facilitate maintenance
 
-## Estructura del Proyecto
+## Project Structure
 
 ```plaintext
-├── src
-│  ├── assets
-│  │   └── outputs.png
-│  └── sistema_interactivo.js
-├── index.html
-└── README.md
+M3_JavaScript/
+├── node_modules/
+├── package.json
+├── package-lock.json
+├── README.md
+└── src/
+    ├── assets/
+    │   ├── outputAdult.png
+    │   ├── outputChild.png
+    │   └── outputError.png
+    ├── index.js
+    ├── index.test.js
+    └── pages/
+        └── index.html
 ```
 
-## Comentarios
+## Notes
 
-- El código JavaScript está comentado para explicar la lógica de validación y generación de mensajes.
-- Se recomienda implementar pruebas unitarias para asegurar el correcto funcionamiento de la lógica de validación.
-- El proyecto utiliza buenas prácticas de organización y documentación.
-- La ejecución inicial se realiza mediante `prompt()` y muestra resultados en la consola, pero puede adaptarse a una interfaz HTML.
+- The JavaScript code is commented to explain the validation logic and message generation.
+- It is recommended to implement unit tests to ensure the correct functioning of the validation logic.
+- The project uses good organization and documentation practices.
+- The initial execution is done via `prompt()` and displays results in the console, but it can be adapted to an HTML interface.
 
-## Uso
+## Usage
 
-1. Clona el repositorio y abre `index.html` en tu navegador.
-2. Ingresa los datos solicitados y haz clic en "Calcular descuento" para ver el resultado.
+1. Clone the repository and open `index.html` in your browser.
+2. Enter the requested data and click "Calculate discount" to see the result.
+
+## Automated tests with Jest
+
+To verify that the code works correctly, you can run the automated tests using [Jest](https://jestjs.io/).
+
+### Steps to run the tests
+
+1. Install the project dependencies (if you haven't done it yet):
+
+   ```bash
+   npm install
+   ```
+
+2. Run the tests with the following command:
+
+   ```bash
+   npm test
+   ```
+
+This will execute all the defined tests and display the results in the terminal.
 
 ---
